@@ -29,7 +29,7 @@ namespace WordDocReplaceTest
             fnd.Wrap = Microsoft.Office.Interop.Word.WdFindWrap.wdFindContinue;
 
             fnd.Text = "{替换前内容}";
-            fnd.Replacement.Text = "替换后内容";
+            fnd.Replacement.Text = "替换后内容-updated";
 
             fnd.Execute(Replace: Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll);
             aDoc.Save();
